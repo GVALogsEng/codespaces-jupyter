@@ -114,3 +114,15 @@
 #        break / continue; will stop the loop at 12 and not print it or skip it to 19
 #     print(number)
 
+# _____________________________________________________________________________________________
+
+# EXERCISE 5: 
+
+# data = [14, 37, 22, 51, 43]
+# big_index = 0
+# for j in range(len(data)):
+#     if data[j] > data[big_index]:
+#         big_index = j
+# print(big_index)  # Output: 3
+
+# _____________________________________________________________________________________________
