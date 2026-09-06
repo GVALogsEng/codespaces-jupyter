@@ -126,3 +126,36 @@
 # print(big_index)  # Output: 3
 
 # _____________________________________________________________________________________________
+
+# SECTION 1.5: Functions
+
+# Return Statement e.g.,
+
+# def contains(data, target):
+#     for item in target:
+#         if item == target:
+#             return True
+#     return False
+
+# 1.5.1 Information Passing
+
+# # 'a' and 'b' are FORMAL PARAMETERS (placeholders)
+# def add_numbers(a, b):
+#     return a + b
+
+# x = 10
+# y = 20
+
+# 'x' and 'y' are ACTUAL PARAMETERS (the real data)
+# result = add_numbers(x, y) 
+
+# Mutable Parameters e.g., 
+
+# A mutable object is an object that can be changed after it is created. 
+# Lists and dictionaries are mutable objects in Python. 
+# When a mutable object is passed as a parameter to a function, 
+# the function can modify the original object.
+
+# grades = ["A", "B", "C"]
+# grades[1] = "A"  # This changes the second element of the list to "A"
+# print(grades)  # Output: ['A', 'A', 'C']
