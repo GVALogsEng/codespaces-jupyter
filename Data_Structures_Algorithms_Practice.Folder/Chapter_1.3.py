@@ -159,3 +159,52 @@
 # grades = ["A", "B", "C"]
 # grades[1] = "A"  # This changes the second element of the list to "A"
 # print(grades)  # Output: ['A', 'A', 'C']
+
+# def add_grade(data):
+#     data.append("F")
+
+# inside the function we call it "data" but outside the function we call it "grades"
+
+#grades = ["A", "B", "C"]
+
+# the formal parameter "data" is a reference to the actual parameter "grades"
+
+# add_grade(grades)
+# print(grades)  # Output: ['A', 'A', 'C', 'F']
+
+# _____________________________________________________________________________________________
+
+# EXAMPLE 6: 
+
+# This function is meant to take a list of numbers and multiply each number by a given factor.
+
+# def scale(data, factor):
+#     for j in range(len(data)):
+#         data[j] *= factor
+
+# numbers = [10, 20, 30]
+
+# scale(numbers, 2)
+# print(numbers)  # Output: [20, 40, 60]
+
+# _____________________________________________________________________________________________
+
+# HOMEWORK #1 Notes
+
+class Pet:
+
+    def __init__(self, name, species, age, tricks):
+        self.name = name
+        self.species = species
+        self.__age = age
+        self.tricks = tricks
+
+    def introduce(self):
+        return "Hi, my name is " + self.name + ". I am a " + self.species + "."
+
+
+pet1 = Pet("Milo", "dog", 4, ["sit"])
+pet2 = Pet("Lucy", "cat", 7, ["jump"])
+
+print(pet1.introduce())
+print(pet2.introduce())
