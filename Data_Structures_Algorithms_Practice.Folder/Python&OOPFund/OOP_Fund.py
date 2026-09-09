@@ -191,20 +191,143 @@
 
 # HOMEWORK #1 Notes
 
-class Pet:
+# class Pet:
 
-    def __init__(self, name, species, age, tricks):
-        self.name = name
-        self.species = species
-        self.__age = age
-        self.tricks = tricks
+#     def __init__(self, name, species, age, tricks):
+#         self.name = name
+#         self.species = species
+#         self.__age = age
+#         self.tricks = tricks
 
-    def introduce(self):
-        return "Hi, my name is " + self.name + ". I am a " + self.species + "."
+#     def introduce(self):
+#         return "Hi, my name is " + self.name + ". I am a " + self.species + "."
 
 
-pet1 = Pet("Milo", "dog", 4, ["sit"])
-pet2 = Pet("Lucy", "cat", 7, ["jump"])
+# pet1 = Pet("Milo", "dog", 4, ["sit"])
+# pet2 = Pet("Lucy", "cat", 7, ["jump"])
 
-print(pet1.introduce())
-print(pet2.introduce())
+# print(pet1.introduce())
+# print(pet2.introduce())
+
+# _____________________________________________________________________________________________
+
+# QUIZ PREP #1 Notes
+
+#****
+# Recall python built in type methods (Called on Objects) e.g., 
+# String Methods, List Methods, Dictionary Methods
+
+#****
+# Recall python built in functions (Global) e.g., 
+# Mathematics & Sequences, Iterables & Functional Programming, Type Conversion, Input & Output, Object Introspection
+
+#****
+# numbers = [1, 2, 3, 4, 5]
+# len(numbers)
+# len is the built-in function and numbers is the argument
+# numbers.append(5)
+# calling append method on object numbers
+# print(len(numbers))  # Output: 6
+
+#****
+# Pythons built in types
+# MUTABLE                  IMMUTABLE
+
+# list [1, 2, 3]           int 80
+# set  {1, 2, 3}           float 1.23
+# dict {"name": "Alice"}   bool TRUE/FALSE
+# ***KEY VALUE MAPPING     str "xxx"
+#                          tuple (1, 2, 3)
+#                          frozenset __
+
+# aliases are two or more variables that refer to the same object in memory.
+# e.g., a = [1, 2, 3]
+#       b = a
+# now supposed we do b.append(4)
+# both a and b will refer to the same list object in memory, so both will be updated to [1, 2, 3, 4].
+# therefore print(a) will output [1, 2, 3, 4] and print(b) will also output [1, 2, 3, 4].
+
+# a is b    TRUE because they refer to the same object in memory.
+# a == b    TRUE because they have the same value.
+# now say a = [1, 2, 3]     b = [1, 2, 3]
+# a is b  FALSE because they refer to different objects in memory.
+# a == b  TRUE because they have the same value.
+
+# Other example of Dic
+# student = {"name": "Milo", "age": 4}
+# print(student["name"])  # Output: Milo
+
+# Type Conversion e.g.,
+# int(3.14)  # Output: 3
+# int(-3.9) # Output: -3
+# float(2)  # Output: 2.0
+# float("3.14")  # Output: 3.14
+# list("hello")  # Output: ['h', 'e', 'l', 'l', 'o']
+
+# Operators e.g.,
+
+# Arithmetic Operators
+# +    addition
+# -    subtraction
+# *    multiplication
+# /    true division
+# //   integer/floor division
+# %    remainder/modulo
+# **   exponentiation
+
+# 7 / 2    # 3.5
+# 7 // 2   # 3
+# 7 % 2    # 1
+# 2 ** 3   # 8
+
+# Comparison Operatorse.g., 
+# <  <=  >  >=  ==  !=
+# Produces Boolean values (True or False) based on the comparison of two values.
+
+# Logical Operators e.g.,
+# and  or  not
+# AND: one False is enough to know the result is False.
+# OR:  one True is enough to know the result is True.
+# NOT: negates the boolean value.
+
+# ***
+# Membership Operators e.g.,
+# x in sequence
+# x not in sequence
+# e.g., 
+# 3 in [1, 2, 3]  # True
+# 7 not in [1, 2, 3]  # True
+
+# ***
+# Sequence indexing and slicing e.g., 
+# a = [10, 20, 30, 40, 50]
+# a[0]  # 10
+# a[1:4]  # [20, 30, 40]
+
+# bool([]) # converts/evaluates something as a boolean value, empty list evaluates to False
+# empty container is False, non-empty container is True (because the list is full vs. empty)
+
+# ***
+# Control Flow e.g.,
+
+# score = 85
+# if score >= 90:
+#     print("A")
+# elif score >= 80:
+#     print("B")
+# else:
+#     print("C")
+
+# Indentation matters e.g.,
+# the colon begins the mody and intendation indicates the block of code that belongs to that control structure.
+
+# age = 21
+# if age >= 21:
+#     print("allowed")
+#     print("welcome")
+# print("Finished")
+
+# while loop e.g.,
+
+x = 1
+while x < 5:
