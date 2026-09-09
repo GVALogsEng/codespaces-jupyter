@@ -328,6 +328,59 @@
 # print("Finished")
 
 # while loop e.g.,
+# x = 1
+# while x < 5:
+#     print(x)
+#     x += 1
 
-x = 1
-while x < 5:
+# for loop e.g., 
+# x = 1
+# for x in range(1, 5):
+#     print(x)
+#     x += 1
+
+# data = [10, 20, 30]
+# for val in data:
+#     print(val)
+
+# break vs continue e.g., 
+# for x in [1, 2, 3, 4]
+#     if x == 3:
+#         break  # stops the loop entirely
+#     print(x)
+
+# ***
+# Function parameters + multable objects e.g., 
+
+# def change(data):
+#     data.append(4)
+# numbers = [1, 2, 3]
+# change(numbers)
+# print(numbers)
+
+# e.g., trap (doesn't change numebrs because it just reassigns the identifier data)
+# def change(data):
+#     data = [100, 200]
+# 
+# numbers = [1, 2, 3]
+# change(numbers)
+
+# print(numbers)
+
+# ***
+
+# scale1 vs scale2 lecture problem
+
+def scale1(data, factor):
+    for j in range(len(data)):
+        data[j] *= factor
+
+def scale2(data, factor):
+    for val in data:
+        val *= factor
+
+data1 = [2, 3, 4]
+scale1(data1, 5)
+
+data2 = [2, 3, 4]
+scale2(data2, 20)
