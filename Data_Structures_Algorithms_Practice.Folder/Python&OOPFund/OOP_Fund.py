@@ -371,16 +371,42 @@
 
 # scale1 vs scale2 lecture problem
 
-def scale1(data, factor):
-    for j in range(len(data)):
-        data[j] *= factor
+# def scale1(data, factor):
+#     for index in range(len(data)):
+#         # j is an identifier being used to represent the current index. k, j, i are common.
+#         data[index] *= factor
+#         # data[index] *= factor
+#         # modifies the positions inside the list
 
-def scale2(data, factor):
-    for val in data:
-        val *= factor
+# data1 = [2,3,4]
+# print(data1)
+# scale1(data1,5)
+# print(data1)
 
-data1 = [2, 3, 4]
-scale1(data1, 5)
+# because integers are immutable, we're doing val = val * 20. val → 40, but list [2, 3, 4] remains.
+# we've lost the connection to the position in the list that needs replacing. 
+# def scale2(data, factor):
+#     for val in data:
+#         val *= factor
 
-data2 = [2, 3, 4]
-scale2(data2, 20)
+# data2 = [2,3,4]
+# scale2(data2,20)
+# print(data2)
+
+# _____________________________________________________________________________________________
+
+# Practice Problem: Apply a Discount
+
+# 1. Go through every INDEX in the list.
+# 2. Access the element at that index.
+# 3. Subtract amount from that element.
+# 4. Store the result back into that position.
+
+def discount(prices, amount):
+    for index in range(len(prices)):
+        prices[index] -= amount 
+
+prices = [100, 50, 80, 20]
+discount(prices, 10)
+print(prices)
+
