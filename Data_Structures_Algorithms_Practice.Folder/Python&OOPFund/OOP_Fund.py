@@ -402,11 +402,14 @@
 # 3. Subtract amount from that element.
 # 4. Store the result back into that position.
 
-def discount(prices, amount):
-    for index in range(len(prices)):
-        prices[index] -= amount 
+# def discount(prices, amount):
+#    for index in range(len(prices)):
+#         prices[index] -= amount 
 
-prices = [100, 50, 80, 20]
-discount(prices, 10)
-print(prices)
+# prices = [100, 50, 80, 20]
+# discount(prices, 10)
+# print(prices)
+
+# _____________________________________________________________________________________________
+
 
